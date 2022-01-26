@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_greenFlag"
+        android:contentDescription=""
+        android:layout_width="296dp"
+        android:layout_height="91dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002"
+        app:srcCompat="@drawable/logo_green_flag" />
+
+    <TextView
+        android:id="@+id/tv_main_information"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/acc_data"
+        android:textColor="@color/white"
+        android:textSize="21sp"
+        android:fontFamily="@font/museosans_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/iv_greenFlag"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iv_greenFlag"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.362" />
+
+    <TextView
+        android:id="@+id/tv_extraInfo_1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/item_1"
+        android:fontFamily="@font/museosans_300"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_information" />
+
+    <TextView
+        android:id="@+id/tv_extraInfo_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_2"
+        android:fontFamily="@font/museosans_300"
+        android:textColor="@color/white"
+        android:layout_marginTop="12dp"
+        android:textSize="19sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_extraInfo_1" />
+
+    <TextView
+        android:id="@+id/tv_extraInfo_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/item_3"
+        android:fontFamily="@font/museosans_300"
+        android:textColor="@color/white"
+        android:layout_marginTop="12dp"
+        android:textSize="19sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/tv_extraInfo_2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_extraInfo_1"
+        app:layout_constraintStart_toStartOf="@+id/tv_main_information"
+        app:layout_constraintTop_toTopOf="@+id/tv_extraInfo_1"
+        android:paddingRight="10dp"
+        app:srcCompat="@drawable/tick" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_extraInfo_2"
+        app:layout_constraintStart_toStartOf="@+id/tv_main_information"
+        app:layout_constraintTop_toTopOf="@+id/tv_extraInfo_2"
+        android:paddingRight="10dp"
+        app:srcCompat="@drawable/tick" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_extraInfo_3"
+        app:layout_constraintStart_toStartOf="@+id/tv_main_information"
+        app:layout_constraintTop_toTopOf="@+id/tv_extraInfo_3"
+        android:paddingRight="10dp"
+        app:srcCompat="@drawable/tick" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_create_acc"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/museosans_300"
+        android:background="@drawable/gradient_button_background"
+        android:text="@string/create_acc"
+        android:onClick="openAccountActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="OnClick" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

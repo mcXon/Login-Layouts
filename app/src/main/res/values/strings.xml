@@ -1,0 +1,30 @@
+<resources>
+    <!-- First activity -->
+    <string name="app_name">W2_Assignment-2</string>
+    <string name="acc_data">GreenFlag customers can create an account to access</string>
+    <string name="item_1">Car health updates</string>
+    <string name="item_2">Request a rescue online</string>
+    <string name="item_3">Policy information</string>
+    <string name="create_acc">Create an account</string>
+
+    <!-- Second activity -->
+    <string name="top_text">Create an account</string>
+
+    <string name="email">Email address</string>
+    <string name="password">Create password</string>
+    <string name="rep_pass">Repeat password</string>
+
+    <string name="acc_info">Your password should have a minimum of 8 characters
+        and contain at least one number, one uppercase and one lower case letter.
+        You can use special characters</string>
+    <string name="next">Next</string>
+
+    <string name="pass_wrong">One of the passwords you entered is not valid</string>
+    <string name="email_wrong"> An account already exist for this email address </string>
+    <string name="pass_match"> Your passwords don\'t match </string>
+
+    <!-- Third activity -->
+    <string name="data_conf"> Account information </string>
+
+
+</resources>
